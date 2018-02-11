@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>
+            {{= it.document.title }}
+        </title>
+        {{= it.include("header.html", { document: it.document }) }}
+    </head>
+    <body>
+        {{= it.document }}
+    </body>
+</html>

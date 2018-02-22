@@ -1,0 +1,41 @@
+//
+// Buttons
+//
+
+.btn {
+  border-width: $btn-border-base;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: $btn-border-radius-base;
+  padding: $btn-padding-base;
+  background-color: transparent;
+  color: $text-color;
+  cursor: pointer;
+  font-size: $btn-font-size-base;
+
+  &--primary {
+    color: $white;
+    background-color: $brand-primary;
+    transition: background-color $transition-duration;
+
+    &:hover {
+      background-color: $brand-primary-dark;
+    }
+
+    &:focus {
+      background-color: $brand-primary;
+    }
+  }
+
+  &--small {
+    padding: $btn-padding-small;
+    border-radius: $btn-border-radius-small;
+    font-size: $btn-font-size-small;
+  }
+
+  &--large {
+    padding: $btn-padding-large;
+    border-radius: $btn-border-radius-large;
+    font-size: $btn-font-size-large;
+  }
+}

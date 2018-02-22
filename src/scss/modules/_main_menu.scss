@@ -1,0 +1,23 @@
+//
+// Main menu module
+//
+
+
+.main-menu {
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__logo {
+    flex: 0 1 50px;
+  }
+
+  &__search {
+    flex: 1 1 auto;
+  }
+
+  &__notifications {
+    flex: 0 1 200px;
+  }
+}

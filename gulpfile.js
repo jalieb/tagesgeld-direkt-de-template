@@ -17,7 +17,7 @@ gulp.task('zetzer', function(){
                 strip: false
             },
             env: {
-                env_string: 'Some plain string to use with it.document.env_string'
+                test: 'Some plain string to use with it.document.env_string'
             }
         }))
         .pipe(gulp.dest('./dist'));

@@ -3,9 +3,41 @@
         <title>
             {{= it.document.title }}
         </title>
-        {{= it.include("header.html", { document: it.document }) }}
+        {{= it.include("header.html") }}
     </head>
     <body>
-        {{= it.document }}
+        <header class="header">
+            <div class="grid">
+                <div class="row">
+                    <div class="col--xs-12">
+                        {{= it.include("main_menu.html") }}
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="grid">
+                <div class="row">
+                    <div class="col--xs-3">
+                        {{= it.include("left_sidebar.html") }}
+                    </div>
+                    <div class="col--xs-6">
+                        {{= it.document }}
+                    </div>
+                    <div class="col--xs-3">
+                        {{= it.include("right_sidebar.html") }}
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="grid">
+                <div class="row">
+                    <div class="col--xs-12">
+                        {{= it.include("footer.html") }}
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
